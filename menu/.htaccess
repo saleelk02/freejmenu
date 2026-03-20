@@ -1,0 +1,27 @@
+<IfModule mod_env.c>
+  SetEnv MENU_ADMIN_USERNAME "admin"
+  SetEnv MENU_ADMIN_PASSWORD "Fareej@786"
+  SetEnv MENU_ADMIN_IDLE_TIMEOUT "900"
+  SetEnv MENU_ADMIN_SESSION_TTL "43200"
+  
+  SetEnv MENU_PROMOTION_USERNAME "mazhar"
+  SetEnv MENU_PROMOTION_PASSWORD "Promo@786"
+  SetEnv MENU_PROMOTION_IDLE_TIMEOUT "900"
+  SetEnv MENU_PROMOTION_SESSION_TTL "43200"
+
+</IfModule>
+
+<IfModule mod_headers.c>
+  Header always unset X-Frame-Options
+  Header always set X-Frame-Options "SAMEORIGIN"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /menu/
+  RewriteRule ^api/ - [L]
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /menu/index.html [L]
+</IfModule>
