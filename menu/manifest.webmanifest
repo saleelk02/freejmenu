@@ -1,0 +1,23 @@
+{
+  "name": "Freej Swaeleh Menu",
+  "short_name": "Freej Menu",
+  "start_url": "/menu/",
+  "scope": "/menu/",
+  "display": "standalone",
+  "background_color": "#b61b36",
+  "theme_color": "#b61b36",
+  "icons": [
+    {
+      "src": "/menu/logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/menu/logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
