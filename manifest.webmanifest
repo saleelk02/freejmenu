@@ -1,8 +1,8 @@
 {
   "name": "Freej Swaeleh Menu",
   "short_name": "Freej Menu",
-  "start_url": "/menu/",
-  "scope": "/menu/",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "background_color": "#b61b36",
   "theme_color": "#b61b36",
